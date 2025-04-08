@@ -14,10 +14,11 @@
             text-align: center;
         }
         header {
-            background: black;
-            color: white;
+            background: white;
+            color: black;
             padding: 20px;
             font-size: 24px;
+            font-weight: bold;
         }
         .video-container {
             display: flex;
@@ -31,7 +32,11 @@
             height: 250px;
         }
         .navigation {
-            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            margin-bottom: 60px;
         }
         .navigation a {
             text-decoration: none;
@@ -47,9 +52,35 @@
             background: black;
             color: white;
         }
+        .top-nav {
+            text-align: right;
+            padding: 10px 20px;
+        }
+        .top-nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .top-nav a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            iframe {
+                width: 90%;
+                height: 200px;
+            }
+            .navigation {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 <body>
+
+    <div class="top-nav">
+        <a href="index.html">Accueil</a>
+    </div>
 
     <header>Assistant Réalisateur</header>
 
@@ -63,9 +94,9 @@
     </div>
 
     <div class="navigation">
-        <a href="index.html">🏠 Accueil</a>
-        <a href="realisateur.html">🎬 Réalisateur</a>
-        <a href="evenementiel.html">📅 Événementiel</a>
+        <a href="index.html">Accueil</a>
+        <a href="realisateur.html">Réalisateur</a>
+        <a href="evenementiel.html">Événementiel</a>
     </div>
 
 </body>
