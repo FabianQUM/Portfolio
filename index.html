@@ -22,22 +22,22 @@
         }
         .image-container {
             width: 100%;
-            height: 50vh;
+            height: 60vh; /* Augmenté pour éviter de couper la tête */
             background: url('PE15-Ep1J2-0200 2.jpg') center/cover no-repeat;
         }
         .links {
-            margin: 40px 0;
+            margin: 30px 0;
             display: flex;
             justify-content: center;
             gap: 30px;
-            font-size: 22px;
-            font-weight: bold;
         }
         .links a {
             text-decoration: none;
             color: black;
-            padding: 10px 20px;
-            border: 2px solid black;
+            padding: 15px 25px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #f1f1f1; /* Même couleur que le carré contact */
             border-radius: 5px;
             transition: 0.3s;
         }
@@ -45,43 +45,11 @@
             background-color: black;
             color: white;
         }
-        .section {
-            padding: 60px 20px;
-            border-bottom: 2px solid #ddd;
-        }
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .video-grid iframe {
-            width: 100%;
-            aspect-ratio: 16/9;
-        }
-        .navigation {
-            margin-top: 40px;
-        }
-        .navigation a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            padding: 10px;
-            margin: 10px;
-            display: inline-block;
-            border: 2px solid black;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .navigation a:hover {
-            background-color: black;
-            color: white;
-        }
         .contact {
-            margin-top: 40px;
-            padding: 20px;
+            margin-top: 20px;
+            padding: 10px;
             background-color: #f1f1f1;
+            font-size: 14px; /* Réduit la taille */
         }
         .contact a {
             color: black;
@@ -97,17 +65,15 @@
     <div class="image-container"></div>
 
     <div class="links">
-        <a href="assistant.html">Assistant Réalisateur</a>
-        <a href="realisateur.html">Réalisateur</a>
-        <a href="evenementiel.html">Événementiel</a>
+        <a href="./assistant.html">Assistant Réalisateur</a>
+        <a href="./realisateur.html">Réalisateur</a>
+        <a href="./evenementiel.html">Événementiel</a>
     </div>
 
     <section class="contact">
-        <h2>Contact</h2>
         <p>Email : <a href="mailto:fabianqum@gmail.com">fabianqum@gmail.com</a></p>
         <p>Téléphone : +33 6 XX XX XX XX</p>
-        <p>LinkedIn : <a href="https://www.linkedin.com/in/fabian-quesada-miranda-9a9613a/" target="_blank">Mon LinkedIn</a></p>
-        <p>YouTube : <a href="https://www.youtube.com" target="_blank">Ma chaîne YouTube</a></p>
+        <p><a href="https://www.linkedin.com/in/fabian-quesada-miranda-9a9613a/" target="_blank">LinkedIn</a> | <a href="https://www.youtube.com" target="_blank">YouTube</a></p>
     </section>
 
 </body>
