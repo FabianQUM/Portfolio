@@ -15,7 +15,7 @@
         header {
             background: white;
             color: #F199A8;
-            padding: 60px 20px 20px;
+            padding: 80px 20px 20px; /* Augmenté pour éviter le chevauchement */
             font-size: 24px;
             font-weight: bold;
             position: relative;
@@ -49,6 +49,9 @@
             height: 250px;
         }
         @media (max-width: 768px) {
+            header {
+                padding-top: 100px; /* Augmenté encore plus pour mobile */
+            }
             .videos {
                 flex-direction: column;
                 align-items: center;
@@ -57,6 +60,18 @@
                 width: 90%;
                 height: 200px;
             }
+        }
+
+        .contact {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            font-size: 14px;
+        }
+        .contact a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -76,6 +91,12 @@
         <iframe src="https://www.youtube.com/embed/DMkXymrdOvc" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/fO_y3i_nRfI" allowfullscreen></iframe>
     </div>
+
+    <section class="contact">
+        <p>Email : <a href="mailto:fabianqum@gmail.com">fabianqum@gmail.com</a></p>
+        <p>Téléphone : +33 6 XX XX XX XX</p>
+        <p><a href="https://www.linkedin.com/in/fabian-quesada-miranda-9a9613a/" target="_blank">LinkedIn</a> | <a href="https://www.youtube.com" target="_blank">YouTube</a></p>
+    </section>
 
 </body>
 </html>
