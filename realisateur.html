@@ -19,86 +19,84 @@
             padding: 20px;
             font-size: 24px;
             font-weight: bold;
+            position: relative;
         }
-        .video-container {
+        .menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+        .menu a {
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .Accueil { color: #457D64; }
+        .assistant { color: #506EA2; }
+        .evenementiel { color: #E0A9A6; }
+
+        .videos {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
-            padding: 20px;
+            gap: 15px;
+            margin-top: 50px;
         }
         iframe {
             width: 30%;
             height: 250px;
         }
-        .navigation {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
-            margin-bottom: 60px;
-        }
-        .navigation a {
-            text-decoration: none;
-            color: black;
-            padding: 10px 15px;
-            font-weight: bold;
-            background-color: #f1f1f1;
-            border-radius: 5px;
-            margin: 5px;
-            display: inline-block;
-        }
-        .navigation a:hover {
-            background: black;
-            color: white;
-        }
-        .top-nav {
-            text-align: right;
-            padding: 10px 20px;
-        }
-        .top-nav a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-        .top-nav a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            iframe {
-                width: 90%;
-                height: 200px;
-            }
-            .navigation {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
     </style>
 </head>
 <body>
 
-    <div class="top-nav">
-        <a href="index.html">Accueil</a><br>  
-        <a href="assistant.html">Assistant Réalisateur</a><br>
-        <a href="evenementiel.html">Événementiel</a>
-    </div>
+    <header>
+        Réalisateur
+        <div class="menu">
+            <a href="./index.html" class="index">Accueil</a>
+            <a href="./realisateur.html" class="realisateur">Réalisateur</a>
+            <a href="./evenementiel.html" class="evenementiel">Événementiel</a>
+        </div>
+    </header>
 
-    <header>Réalisateur</header>
-
-    <div class="video-container">
+    <div class="videos">
         <iframe src="https://www.youtube.com/embed/FOXJn8A24Ck" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/DMkXymrdOvc" allowfullscreen></iframe>
+         <iframe src="https://www.youtube.com/embed/SKSHLf_vf5A" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/fO_y3i_nRfI" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/KmUOrU_Vk2g" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/N5zWrr1h5R4" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/OEGLv9MLbRk" allowfullscreen></iframe>
-    </div>
-
-    <div class="navigation">
-        <a href="index.html">Accueil</a>
-        <a href="assistant.html">Assistant Réalisateur</a>
-        <a href="evenementiel.html">Événementiel</a>
+        <iframe src="https://www.youtube.com/embed/psbg-p4rGuI" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/SjU85tezhKM" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/fAuzpvQfQoA" allowfullscreen></iframe>        
+        <iframe src="https://www.youtube.com/embed/PLJ0Oc3ddI0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/LNggFMmOskw" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/p0eT8Ty64u4" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/i5vF-SNrpkg" allowfullscreen></iframe>
+                 <iframe src="https://www.youtube.com/embed/KtzPzvp2Gv8" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/peCoMSm4Xpk" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/bhNd2YL6BLE" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Ay0_zQZ6pH0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/c2Chfr6EtiM" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/AGupGRRfC04" allowfullscreen></iframe>      
+        <iframe src="https://www.youtube.com/embed/7cfbVC-Gios" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/F2s-BT8LIW4" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/5ATjvTH2puY" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/A8ObWBcggZU" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/Wi2x7ixrZOk" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/1MbFpfX2pW4" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/KCtdeqiBx0s" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/D1tvCIPmqvg" allowfullscreen></iframe>    
+        <iframe src="https://www.youtube.com/embed/uoVOfCmskT8" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/PI3cZA5hebA" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Tc4X3XO47bY" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/u9wXqO6iNTs" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/OCchLltg2Rg" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/aqzizriqPkY" allowfullscreen></iframe>
     </div>
 
 </body>
