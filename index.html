@@ -26,28 +26,37 @@
             background: url('PE15-Ep1J2-0200 2.jpg') center/cover no-repeat;
         }
         .links {
-            margin: 30px 0;
             display: flex;
-            justify-content: center;
-            gap: 30px;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px 0;
+            gap: 20px;
         }
         .links a {
             text-decoration: none;
             color: black;
-            padding: 15px 25px;
+            padding: 15px 20px;
             font-size: 20px;
             font-weight: bold;
             background-color: #f1f1f1; /* Même couleur que le carré contact */
             border-radius: 5px;
-            transition: 0.3s;
+            text-align: center;
+            width: 250px;
+
         }
         .links a:hover {
             background-color: black;
             color: white;
         }
+            @media (max-width: 768px) {
+                .links-cotainer a {
+                    width: 90%
+                    font-size:18px;
+                     }
+        }
         .contact {
-            margin-top: 20px;
-            padding: 10px;
+            margin-top: 60px;
+            padding: 20px;
             background-color: #f1f1f1;
             font-size: 14px; /* Réduit la taille */
         }
