@@ -19,14 +19,20 @@
             padding: 20px;
             font-size: 24px;
             font-weight: bold;
+            position: relative;
         }
         .menu {
-            margin-top: 20px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
         }
         .menu a {
             text-decoration: none;
             font-size: 18px;
-            margin: 0 10px;
+            margin: 5px 0;
         }
         .assistant { color: #506EA2; }
         .realisateur { color: #457D64; }
@@ -37,7 +43,7 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 15px;
-            margin-top: 20px;
+            margin-top: 50px;
         }
         iframe {
             width: 30%;
@@ -47,13 +53,14 @@
 </head>
 <body>
 
-    <header>Assistant Réalisateur</header>
-
-    <div class="menu">
-        <a href="./index.html" class="assistant">Accueil</a>
-        <a href="./realisateur.html" class="realisateur">Réalisateur</a>
-        <a href="./evenementiel.html" class="evenementiel">Événementiel</a>
-    </div>
+    <header>
+        Assistant Réalisateur
+        <div class="menu">
+            <a href="./index.html" class="assistant">Accueil</a>
+            <a href="./realisateur.html" class="realisateur">Réalisateur</a>
+            <a href="./evenementiel.html" class="evenementiel">Événementiel</a>
+        </div>
+    </header>
 
     <div class="videos">
         <iframe src="https://www.youtube.com/embed/FOXJn8A24Ck" allowfullscreen></iframe>
