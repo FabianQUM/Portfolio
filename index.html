@@ -21,14 +21,12 @@
             font-weight: bold;
         }
         .image-container {
-            height: 50vh; /* L'image prend 50% de l'écran */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: url('PE15-Ep1J2-0200 2.jpg') center/contain no-repeat; 
+            width: 100%;
+            height: 50vh;
+            background: url('PE15-Ep1J2-0200 2.jpg') center/cover no-repeat;
         }
         .links {
-            margin-top: 20px;
+            margin: 40px 0;
             display: flex;
             justify-content: center;
             gap: 30px;
@@ -48,7 +46,8 @@
             color: white;
         }
         .section {
-            padding: 40px 20px;
+            padding: 60px 20px;
+            border-bottom: 2px solid #ddd;
         }
         .video-grid {
             display: grid;
@@ -60,6 +59,24 @@
         .video-grid iframe {
             width: 100%;
             aspect-ratio: 16/9;
+        }
+        .navigation {
+            margin-top: 40px;
+        }
+        .navigation a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .navigation a:hover {
+            background-color: black;
+            color: white;
         }
         .contact {
             margin-top: 40px;
@@ -80,37 +97,10 @@
     <div class="image-container"></div>
 
     <div class="links">
-        <a href="#assistant">Assistant Réalisateur</a>
-        <a href="#realisateur">Réalisateur</a>
-        <a href="#evenementiel">Événementiel</a>
+        <a href="assistant.html">Assistant Réalisateur</a>
+        <a href="realisateur.html">Réalisateur</a>
+        <a href="evenementiel.html">Événementiel</a>
     </div>
-
-    <section id="assistant" class="section">
-        <h2>Assistant Réalisateur</h2>
-        <div class="video-grid">
-            <iframe src="https://www.youtube.com/embed/FOXJn8A24Ck" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/DMkXymrdOvc" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/fO_y3i_nRfI" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <section id="realisateur" class="section">
-        <h2>Réalisateur</h2>
-        <div class="video-grid">
-            <iframe src="https://www.youtube.com/embed/2bHL7jSSwtY" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/V6U2QymHA_o" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/KtzPzvp2Gv8" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <section id="evenementiel" class="section">
-        <h2>Événementiel</h2>
-        <div class="video-grid">
-            <iframe src="https://www.youtube.com/embed/Hew-aZ9LF-0" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/Ishcq1Vj8nk" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/8snO_n94mDE" allowfullscreen></iframe>
-        </div>
-    </section>
 
     <section class="contact">
         <h2>Contact</h2>
