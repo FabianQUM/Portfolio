@@ -3,61 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Professionnel</title>
+    <title>Événementiel</title>
     <style>
         body {
             font-family: Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: white;
-            color: black;
             text-align: center;
         }
         header {
             background: white;
-            color: black;
-            padding: 20px;
+            color: #F199A8;
+            padding: 60px 20px 20px;
             font-size: 24px;
             font-weight: bold;
+            position: relative;
         }
-        .image-container {
-            width: 100%;
-            height: 60vh;
-            background: url('PE15-Ep1J2-0200 2.jpg') center/cover no-repeat;
-        }
-        .links {
+        .menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            margin-top: 75px;
-            gap: 25px;
+            text-align: right;
         }
-        .links a {
-            display: block;
+        .menu a {
             text-decoration: none;
-            color: white;
-            padding: 15px 20px;
             font-size: 18px;
-            border-radius: 5px;
-            text-align: center;
-            width: 200px;
+            margin: 5px 0;
         }
-        .assistant { background-color: #3462BF; }
-        .realisateur { background-color: #028534; }
-        .evenementiel { background-color: #F199A8; }
+        .menu .assistant { color: #3462BF; }
+        .menu .realisateur { color: #028534; }
+        .menu .evenementiel { color: #F199A8; }
+
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 50px;
+        }
+        iframe {
+            width: 30%;
+            height: 250px;
+        }
+        @media (max-width: 768px) {
+            .videos {
+                flex-direction: column;
+                align-items: center;
+            }
+            iframe {
+                width: 90%;
+                height: 200px;
+            }
+        }
+
+        .contact {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            font-size: 14px;
+        }
+        .contact a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
 
-    <header>Portfolio Professionnel</header>
+    <header>
+        Événementiel
+        <div class="menu">
+            <a href="./index.html" class="evenementiel">Accueil</a>
+            <a href="./assistant.html" class="assistant">Assistant Réalisateur</a>
+            <a href="./realisateur.html" class="realisateur">Réalisateur</a>
+        </div>
+    </header>
 
-    <div class="image-container"></div>
-
-    <div class="links">
-        <a href="./assistant.html" class="assistant">Assistant Réalisateur</a>
-        <a href="./realisateur.html" class="realisateur">Réalisateur</a>
-        <a href="./evenementiel.html" class="evenementiel">Événementiel</a>
+    <div class="videos">
+        <iframe src="https://www.youtube.com/embed/FOXJn8A24Ck" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/DMkXymrdOvc" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/fO_y3i_nRfI" allowfullscreen></iframe>
     </div>
+
+    <section class="contact">
+        <p>Email : <a href="mailto:fabianqum@gmail.com">fabianqum@gmail.com</a></p>
+        <p>Téléphone : +33 6 XX XX XX XX</p>
+        <p><a href="https://www.linkedin.com/in/fabian-quesada-miranda-9a9613a/" target="_blank">LinkedIn</a> | <a href="https://www.youtube.com" target="_blank">YouTube</a></p>
+    </section>
 
 </body>
 </html>
