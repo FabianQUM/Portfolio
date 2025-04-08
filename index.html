@@ -13,78 +13,116 @@
             color: black;
             text-align: center;
         }
+
         header {
             background: white;
             color: black;
             padding: 20px;
             font-size: 24px;
             font-weight: bold;
+            position: relative;
         }
+
+        /* Menu en haut à droite */
+        .menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+        }
+
+        .menu .assistant { background-color: #506EA2; }
+        .menu .realisateur { background-color: #457D64; }
+        .menu .evenementiel { background-color: #E0A9A6; }
+
         .image-container {
             width: 100%;
             height: 60vh; /* Augmenté pour éviter de couper la tête */
             background: url('PE15-Ep1J2-0200 2.jpg') center/cover no-repeat;
         }
+
         .links {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 75px;
+            margin-top: 50px; /* Ajout d'un espace entre la photo et le premier bouton */
             gap: 25px;
         }
-        .links-button {
+
+        .links a {
             display: block;
             text-decoration: none;
             color: white;
             padding: 15px 20px;
             font-size: 18px;
-            font-weight: bold;
             border-radius: 5px;
             text-align: center;
             width: 200px;
+        }
 
-        }
-        .assitant-realisateur {
-            background-color: #506EA2;
-        }
-        Realisatueur {
-            background-color: #457D64;
-        }
-        Evenementiel {
-            background-color: #E0A9A6;
-        }
+        .assistant { background-color: #506EA2; }
+        .realisateur { background-color: #457D64; }
+        .evenementiel { background-color: #E0A9A6; }
+
         .links a:hover {
             opacity: 0.8; 
         }
-            @media (max-width: 768px) {
-                .links-cotainer a {
-                    width: 90%
-                    font-size:18px;
-                     }
-        }
+
         .contact {
-            margin-top: 60px;
+            margin-top: 80px; /* Augmenté pour mieux séparer du menu */
             padding: 20px;
             background-color: #f1f1f1;
-            font-size: 14px; /* Réduit la taille */
+            font-size: 14px;
         }
+
         .contact a {
             color: black;
-            font-weight: bold;
             text-decoration: none;
+        }
+
+        /* Ajustements pour mobile */
+        @media (max-width: 768px) {
+            .links a {
+                width: 90%;
+                font-size: 18px;
+            }
+            .menu {
+                top: 10px;
+                right: 10px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header>Portfolio Professionnel</header>
+    <header>
+        Portfolio Professionnel
+        <div class="menu">
+            <a href="./index.html" class="assistant">Accueil</a>
+            <a href="./assistant.html" class="assistant">Assistant Réalisateur</a>
+            <a href="./realisateur.html" class="realisateur">Réalisateur</a>
+            <a href="./evenementiel.html" class="evenementiel">Événementiel</a>
+        </div>
+    </header>
 
     <div class="image-container"></div>
 
     <div class="links">
-        <a href="./assistant.html">Assistant Réalisateur</a>
-        <a href="./realisateur.html">Réalisateur</a>
-        <a href="./evenementiel.html">Événementiel</a>
+        <a href="./assistant.html" class="assistant">Assistant Réalisateur</a>
+        <a href="./realisateur.html" class="realisateur">Réalisateur</a>
+        <a href="./evenementiel.html" class="evenementiel">Événementiel</a>
     </div>
 
     <section class="contact">
