@@ -3,263 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabian Quesada Miranda</title>
+    <title>Portfolio Professionnel</title>
     <style>
         body {
-            font-family: helvetica;
+            font-family: Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
             text-align: center;
-            min-width: 1024px;
-            overflow-x: auto;
         }
         header {
             background: white;
             color: black;
             padding: 20px;
             font-size: 24px;
+            font-weight: bold;
         }
-        section {
-            padding: 20px;
-            
-        }
-        
-        .bio {
-    background: url('PE15-Ep1J2-0200 2.jpg') center/cover no-repeat; 
-    color: white; /* Texte blanc */
-    font-size: 22px;
-    text-shadow: 0px 0px 0px black;
-    padding: 50px;
-    min-height: 430px; /* Hauteur minimum */
-    
-    display: flex; /* Active Flexbox */
-    flex-direction: column; /* Organise le contenu en colonne */
-    justify-content: flex-end; /* Aligne le texte en bas */
-    align-items: center; /* Centre horizontalement */
-    text-align: center; /* Centre le texte */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Ombre douce */
-    -webkit-text-stroke: 0.3px black; /* Contour fin */
-}
-}
-        
-        .gallery {
+        .image-container {
+            height: 50vh; /* L'image prend 50% de l'écran */
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            align-items: center;
+            background: url('PE15-Ep1J2-0200 2.jpg') center/contain no-repeat; 
         }
-        .gallery video {
-            width: 45%;
-            max-width: 500px;
-        }
-        iframe {
-            width: 80%;
-            height: 400px;
-            border: 0;
-
-            }
-        .realisation {
-            background-color: white;
-            color: black;
-            padding: 20px;
-        }
-        footer {
-            background: white;
-            color: black;
-            padding: 10px;
+        .links {
             margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .links a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .links a:hover {
+            background-color: black;
+            color: white;
+        }
+        .section {
+            padding: 40px 20px;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .video-grid iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+        }
+        .contact {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        .contact a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Portfolio Professionel</h1>
-    </header>
+    <header>Portfolio Professionnel</header>
 
-    <section class="bio">
-    
+    <div class="image-container"></div>
 
-
-        <p> <b> Depuis 2006 je travaille en tant qu'assistant réalisateur sur des productions variées telles 
-        <br> que des publicités, des fictions (long et court-métrage), des émissions TV et des clips musicaux.  
-        <br> Grace a mon éxperience, riche et diversifiée, j'ai travaille dans plus d'une vingtaine de pays. 
-        <p> Je réalise également, des publicités, des contenus documentaires, corporatifs et événementiels. <b> </div>
-         
-    </section>
-
- <section>
-        <h2>Assistant Réalisateur</h2>
-            <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/FOXJn8A24Ck" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/DMkXymrdOvc" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/SKSHLf_vf5A" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/fO_y3i_nRfI" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/KmUOrU_Vk2g" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/N5zWrr1h5R4" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/OEGLv9MLbRk" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/psbg-p4rGuI" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/SjU85tezhKM" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/fAuzpvQfQoA" allowfullscreen></iframe>        
-        <iframe src="https://www.youtube.com/embed/PLJ0Oc3ddI0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/LNggFMmOskw" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/p0eT8Ty64u4" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/i5vF-SNrpkg" allowfullscreen></iframe>
-                 <iframe src="https://www.youtube.com/embed/KtzPzvp2Gv8" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/peCoMSm4Xpk" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/bhNd2YL6BLE" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/Ay0_zQZ6pH0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/c2Chfr6EtiM" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/AGupGRRfC04" allowfullscreen></iframe>      
-        <iframe src="https://www.youtube.com/embed/7cfbVC-Gios" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/F2s-BT8LIW4" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/5ATjvTH2puY" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/A8ObWBcggZU" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/Wi2x7ixrZOk" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/1MbFpfX2pW4" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/KCtdeqiBx0s" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/D1tvCIPmqvg" allowfullscreen></iframe>    
-        <iframe src="https://www.youtube.com/embed/uoVOfCmskT8" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/PI3cZA5hebA" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/Tc4X3XO47bY" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/u9wXqO6iNTs" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/OCchLltg2Rg" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/aqzizriqPkY" allowfullscreen></iframe>
-       
-    
-        
+    <div class="links">
+        <a href="#assistant">Assistant Réalisateur</a>
+        <a href="#realisateur">Réalisateur</a>
+        <a href="#evenementiel">Événementiel</a>
     </div>
 
-           
-
-    
-     
-    </section>
-    
-    <section class="realisation">
-    <h2>Réalisateur</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/2bHL7jSSwtY" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/V6U2QymHA_o" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ARZtbhP9wTQ" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/oIUte8RebPE" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hew-aZ9LF-0" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ishcq1Vj8nk" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8snO_n94mDE" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xsJmI6Yt4BI" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/c3HF3uzmIoQ" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Og9r563IrM8" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BTMBgQgSnD8" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-        
- <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7aHyKdE-I" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ssTsTebsero" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/86HU4nHJ4Ds" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/1wIyvr8NELw" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/iKJj04myWzU" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/XaiEV4TqEg4" 
-        title="Vidéo YouTube" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-        
-</section>
-
-
-
-    <section>
-        <h2>Pays où j'ai travaillé</h2>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1Rr2mNO7hsz6wd06kHMY5EiAKW3JeaqI&ehbc=2E312F" width="640" height="480"></iframe>
+    <section id="assistant" class="section">
+        <h2>Assistant Réalisateur</h2>
+        <div class="video-grid">
+            <iframe src="https://www.youtube.com/embed/FOXJn8A24Ck" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/DMkXymrdOvc" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/fO_y3i_nRfI" allowfullscreen></iframe>
+        </div>
     </section>
 
-    <section>
+    <section id="realisateur" class="section">
+        <h2>Réalisateur</h2>
+        <div class="video-grid">
+            <iframe src="https://www.youtube.com/embed/2bHL7jSSwtY" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/V6U2QymHA_o" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/KtzPzvp2Gv8" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="evenementiel" class="section">
+        <h2>Événementiel</h2>
+        <div class="video-grid">
+            <iframe src="https://www.youtube.com/embed/Hew-aZ9LF-0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/Ishcq1Vj8nk" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/8snO_n94mDE" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="contact">
         <h2>Contact</h2>
-        <p>Email : <a href="mailto:ton-email@example.com">fabianqum@gmail.com</a></p>
-        <p>LinkedIn : <a href="https://www.linkedin.com/in/fabian-quesada-miranda-9a9613a/">Mon LinkedIn</a></p>
+        <p>Email : <a href="mailto:fabianqum@gmail.com">fabianqum@gmail.com</a></p>
+        <p>Téléphone : +33 6 XX XX XX XX</p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/fabian-quesada-miranda-9a9613a/" target="_blank">Mon LinkedIn</a></p>
+        <p>YouTube : <a href="https://www.youtube.com" target="_blank">Ma chaîne YouTube</a></p>
     </section>
-
-    <footer>
-        <p>&copy; 2025 - Fabian Quesada Miranda</p>
-    </footer>
 
 </body>
 </html>
