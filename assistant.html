@@ -12,11 +12,15 @@
             background-color: white;
             text-align: center;
         }
-        header {
+        .title-container {
+            display: inline-block;
             background: #3462BF;
             color: white;
-            padding: 20px;
+            padding: 15px 25px;
             font-size: 24px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 30px;
         }
         .videos {
             display: grid;
@@ -47,15 +51,21 @@
             .videos {
                 grid-template-columns: 1fr;
             }
+            .menu {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header>Assistant Réalisateur</header>
+    <div class="title-container">Assistant Réalisateur</div>
 
     <div class="videos">
-     <iframe src="https://www.youtube.com/embed/FOXJn8A24Ck" allowfullscreen></iframe>
+         <iframe src="https://www.youtube.com/embed/FOXJn8A24Ck" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/DMkXymrdOvc" allowfullscreen></iframe>
          <iframe src="https://www.youtube.com/embed/SKSHLf_vf5A" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/fO_y3i_nRfI" allowfullscreen></iframe>
@@ -89,7 +99,6 @@
         <iframe src="https://www.youtube.com/embed/u9wXqO6iNTs" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/OCchLltg2Rg" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/aqzizriqPkY" allowfullscreen></iframe>
-        
     </div>
 
     <div class="menu">
@@ -100,3 +109,4 @@
 
 </body>
 </html>
+
