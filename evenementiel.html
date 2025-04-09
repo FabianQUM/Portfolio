@@ -12,91 +12,74 @@
             background-color: white;
             text-align: center;
         }
-        header {
-            background: white;
-            color: #F199A8;
-            padding: 80px 20px 20px; /* Augmenté pour éviter le chevauchement */
+        .title-container {
+            display: inline-block;
+            background: #F199A8;
+            color: white;
+            padding: 15px 25px;
             font-size: 24px;
             font-weight: bold;
-            position: relative;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+        .videos iframe {
+            width: 100%;
+            height: 250px;
         }
         .menu {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            flex-direction: column;
-            text-align: right;
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
         }
         .menu a {
             text-decoration: none;
             font-size: 18px;
-            margin: 5px 0;
-        }
-        .menu .assistant { color: #3462BF; }
-        .menu .realisateur { color: #028534; }
-        .menu .evenementiel { color: #F199A8; }
-
-        .videos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 50px;
-        }
-        iframe {
-            width: 30%;
-            height: 250px;
-        }
-        @media (max-width: 768px) {
-            header {
-                padding-top: 100px; /* Augmenté encore plus pour mobile */
-            }
-            .videos {
-                flex-direction: column;
-                align-items: center;
-            }
-            iframe {
-                width: 90%;
-                height: 200px;
-            }
-        }
-
-        .contact {
-            margin-top: 60px;
-            padding: 20px;
-            background-color: #f1f1f1;
-            font-size: 14px;
-        }
-        .contact a {
-            color: black;
             font-weight: bold;
-            text-decoration: none;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .home { color: #3462BF; }
+        .realisateur { color: #028534; }
+        .evenementiel { color: #F199A8; }
+        @media (max-width: 768px) {
+            .videos {
+                grid-template-columns: 1fr;
+            }
+            .menu {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        Événementiel
-        <div class="menu">
-            <a href="./index.html" class="index">Accueil</a>
-            <a href="./assistant.html" class="assistant">Assistant Réalisateur</a>
-            <a href="./realisateur.html" class="realisateur">Réalisateur</a>
-        </div>
-    </header>
+    <div class="title-container">Événementiel</div>
 
     <div class="videos">
-        <iframe src="https://www.youtube.com/embed/FOXJn8A24Ck" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/DMkXymrdOvc" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/fO_y3i_nRfI" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/ynt5tvbm98Q" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/zLEuclKdEKc" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/86HU4nHJ4Ds" allowfullscreen></iframe>
+	<iframe src="https://www.youtube.com/embed/XaiEV4TqEg4" allowfullscreen></iframe>
+	<iframe src="https://www.youtube.com/embed/eLHJAqr_I80" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/X1ojNHcmfqk" allowfullscreen></iframe>
+	<iframe src="https://www.youtube.com/embed/6NSWxoczZpE" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/X1ojNHcmfqk" allowfullscreen></iframe>
     </div>
 
-    <section class="contact">
-        <p>Email : <a href="mailto:fabianqum@gmail.com">fabianqum@gmail.com</a></p>
-        <p>Téléphone : +33 6 XX XX XX XX</p>
-        <p><a href="https://www.linkedin.com/in/fabian-quesada-miranda-9a9613a/" target="_blank">LinkedIn</a> | <a href="https://www.youtube.com" target="_blank">YouTube</a></p>
-    </section>
+    <div class="menu">
+        <a href="index.html" class="home">Accueil</a>
+        <a href="assistant.html" class="realisateur">Assistant Réalisateur</a>
+        <a href="realisateur.html" class="evenementiel">Réalisateur</a>
+    </div>
 
 </body>
 </html>
